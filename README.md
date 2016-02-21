@@ -27,5 +27,6 @@ print channel.receive()
 gw.exit()
 ```
 
-docker build -t dwsim_execnet .
-docker run -p 8888:8888 -dt dwsim_execnet mono /dwsim/IronPython-2.7.5/ipy.exe /dwsim/socketserver2.py
+To build: `docker build -t dwsim_execnet .`
+
+To run: `docker run -p 8888:8888 -dt dwsim_execnet mono /dwsim/IronPython-2.7.5/ipy.exe /dwsim/socketserver2.py`
