@@ -14,7 +14,7 @@ RUN apt-get install -y vim git
 RUN apt-get install -y unzip
 RUN apt-get install -y wget
 RUN mkdir /dwsim
-RUN cd /dwsim && wget http://enophook.resisty.net/~torstein/IronPython-2.7.5.zip && unzip IronPython-2.7.5.zip
+RUN cd /dwsim && wget https://github.com/IronLanguages/main/releases/download/ipy-2.7.5/IronPython-2.7.5.zip && unzip IronPython-2.7.5.zip
 RUN mkdir /dwsim/dwsimlib
 RUN cd /dwsim/dwsimlib && wget "http://downloads.sourceforge.net/project/dwsim/DWSIM/DTL/DWSIM_Standalone_Thermodynamics_Library_v3.2.0.zip?r=&ts=1455993889&use_mirror=netcologne" -O DWSIM_Standalone_Thermodynamics_Library_v3.2.0.zip && unzip DWSIM_Standalone_Thermodynamics_Library_v3.2.0.zip
 RUN cd /dwsim && wget https://bitbucket.org/hpk42/execnet/raw/80baab4140de/execnet/script/socketserver.py
